@@ -8,7 +8,6 @@ st.set_page_config(page_title="Video Bounding Box Overlay", layout="centered")
 st.title("Video Bounding Box Overlay Tool")
 
 # File Uploads
-st.set_option('server.maxUploadSize', 1000) 
 video_file = st.file_uploader("Upload video file", type=["mp4"])
 json_file = st.file_uploader("Upload json file", type=["json"])
 
