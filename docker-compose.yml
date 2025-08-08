@@ -1,0 +1,11 @@
+services:
+  streamlit_app:
+    build: 
+      context: .
+      network: host
+    container_name: video_overlay_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    
